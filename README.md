@@ -34,7 +34,7 @@ Zero-copy deserialization libraries have an additional set of benchmarks:
 
 Some benchmark results may be italicized and followed by an asterisk. Mouse over these for more details on what situation was benchmarked. Other footnotes are located at the bottom.
 
-## Last updated: 2024-12-15 6:43:28
+## Last updated: 2024-12-15 6:52:35
 
 <details><summary>Runtime info</summary>
 
@@ -67,7 +67,7 @@ Thread(s) per core:                 2
 Core(s) per socket:                 2
 Socket(s):                          1
 Stepping:                           1
-BogoMIPS:                           4890.86
+BogoMIPS:                           4890.85
 Flags:                              fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext invpcid_single vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
 Virtualization:                     AMD-V
 Hypervisor vendor:                  Microsoft
@@ -95,6 +95,41 @@ Vulnerability Tsx async abort:      Not affected
 
 </details>
 
+## `log`
+
+This data set is composed of HTTP request logs that are small and contain many strings.
+
+### Raw data
+
+For operations, time per iteration; for size, bytes. Lower is better.
+
+#### Serialize / deserialize speed and size
+
+| Crate | Serialize | Deserialize | Size | Zlib | Zstd | Zstd Time |
+|---|--:|--:|--:|--:|--:|--:|
+| [serialization 0.2.4][serialization] | 14.344 µs | † | † | † | † | † |
+
+#### Zero-copy deserialization speed
+
+| Crate | Access | Read | Update |
+|---|--:|--:|--:|
+
+### Comparison
+
+Relative to best. Higher is better.
+
+#### Serialize / deserialize speed and size
+
+| Crate | Serialize | Deserialize | Size | Zlib | Zstd | Zstd Time |
+|---|--:|--:|--:|--:|--:|--:|
+| [serialization 0.2.4][serialization] | 100.00% | † | † | † | † | † |
+
+#### Zero-copy deserialization speed
+
+| Crate | Access | Read | Update |
+|---|--:|--:|--:|
+
+[serialization]: https://crates.io/crates/serialization/0.2.4
 
 
 ## Footnotes:
