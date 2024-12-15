@@ -13,12 +13,12 @@ where
 
     group.bench_function("serialize", |b| {
         b.iter(|| {
-            let mut buf = Buffer::<1000>::new();
+            let mut buf = Buffer::<10000>::new();
             let ref mut encoder = PacketEncoder::new(&mut buf);
             let _result = black_box(data.encode(encoder));
         })
     });
-    let mut buf = Buffer::<1000>::new();
+    let mut buf = Buffer::<10000>::new();
     let ref mut encoder = PacketEncoder::new(&mut buf);
     black_box(data.encode(encoder)).unwrap();
 
