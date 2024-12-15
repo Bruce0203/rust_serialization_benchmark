@@ -91,8 +91,8 @@ savefile = { version = "=0.17.7", optional = true }
 savefile-derive = { version = "=0.17.7", optional = true }
 wiring = { version = "=0.2.2", optional = true }
 zstd = "=0.13.2"
-serialization = { git = "https://github.com/Bruce0203/serialization", optional = true, features = ["fast_binary_format"] }
-serialization_minecraft = { git = "https://github.com/Bruce0203/serialization", optional = true, features = ["fast_binary_format"] }
+serialization = { version = "0.2.6", optional = true, features = ["fast_binary_format"] }
+serialization_minecraft = { version = "0.2.6", optional = true, features = ["fast_binary_format"] }
 fastbuf = "0.28.0"
 
 [features]
