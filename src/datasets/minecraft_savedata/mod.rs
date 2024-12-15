@@ -279,7 +279,6 @@ impl From<pb::Item> for Item {
 #[cfg_attr(feature = "savefile", derive(savefile_derive::Savefile))]
 #[cfg_attr(feature = "nanoserde", derive(nanoserde::SerBin, nanoserde::DeBin))]
 #[cfg_attr(feature = "wiring", derive(Wiring, Unwiring))]
-
 #[cfg_attr(feature = "serialization", derive(serialization::Serializable))]
 pub struct Abilities {
     #[cfg_attr(feature = "wiring", fixed)]
@@ -399,7 +398,6 @@ impl From<pb::Abilities> for Abilities {
 #[cfg_attr(feature = "savefile", derive(savefile_derive::Savefile))]
 #[cfg_attr(feature = "nanoserde", derive(nanoserde::SerBin, nanoserde::DeBin))]
 #[cfg_attr(feature = "wiring", derive(Wiring, Unwiring))]
-
 #[cfg_attr(feature = "serialization", derive(serialization::Serializable))]
 pub struct Entity {
     pub id: String,
@@ -654,7 +652,6 @@ impl From<pb::Entity> for Entity {
 #[cfg_attr(feature = "savefile", derive(savefile_derive::Savefile))]
 #[cfg_attr(feature = "nanoserde", derive(nanoserde::SerBin, nanoserde::DeBin))]
 #[cfg_attr(feature = "wiring", derive(Wiring, Unwiring))]
-
 #[cfg_attr(feature = "serialization", derive(serialization::Serializable))]
 pub struct RecipeBook {
     #[cfg_attr(feature = "bilrost", bilrost(encoding(packed)))]
@@ -848,7 +845,6 @@ impl From<pb::RecipeBook> for RecipeBook {
 #[cfg_attr(feature = "savefile", derive(savefile_derive::Savefile))]
 #[cfg_attr(feature = "nanoserde", derive(nanoserde::SerBin, nanoserde::DeBin))]
 #[cfg_attr(feature = "wiring", derive(Wiring, Unwiring))]
-
 #[cfg_attr(feature = "serialization", derive(serialization::Serializable))]
 pub struct Player {
     #[cfg_attr(feature = "wiring", fixed(3))]
@@ -1211,7 +1207,7 @@ impl From<pb::Player> for Player {
     }
 }
 
-#[derive(Clone, PartialEq,Debug)]
+#[derive(Clone, PartialEq, Debug)]
 #[cfg_attr(feature = "bilrost", derive(bilrost::Message))]
 #[cfg_attr(feature = "bincode", derive(bincode::Encode, bincode::Decode))]
 #[cfg_attr(feature = "bitcode", derive(bitcode::Encode, bitcode::Decode))]
