@@ -1,6 +1,7 @@
 #![cfg_attr(feature = "serialization", feature(const_trait_impl))]
 #![cfg_attr(feature = "serialization", feature(generic_const_exprs))]
 #![cfg_attr(feature = "serialization", feature(specialization))]
+#![cfg_attr(feature = "serialization", feature(new_zeroed_alloc))]
 // wiring causes this clippy lint everywhere
 #![cfg_attr(feature = "wiring", allow(clippy::manual_async_fn))]
 
