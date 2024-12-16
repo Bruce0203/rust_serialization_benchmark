@@ -1,4 +1,4 @@
-use std::{any::type_name, fmt::Debug};
+use std::{any::type_name, fmt::Debug, ops::DerefMut};
 
 use criterion::{black_box, Criterion};
 use fastbuf::{Buf, Buffer, ReadBuf};
@@ -13,38 +13,20 @@ where
 
     const BUFFER_LEN: usize = 50_000_000;
 
+    let mut buf = unsafe { Box::<Buffer<BUFFER_LEN>>::new_zeroed().assume_init() };
     group.bench_function("serialize", |b| {
         b.iter(|| {
-            let mut buf = unsafe { Box::<Buffer<BUFFER_LEN>>::new_zeroed().assume_init() };
+            unsafe { buf.set_filled_pos(0) };
             let ref mut encoder = PacketEncoder::new(&mut buf);
-            let _result = black_box(data.encode(encoder));
+            let _result = black_box(&data.encode(encoder).unwrap());
         })
     });
-    let mut buf = {
-        let mut buf = Box::new(Buffer::<BUFFER_LEN>::new());
-        let ref mut encoder = PacketEncoder::new(&mut buf);
-        let _result = black_box(data.encode(encoder)).unwrap();
-        buf
-    };
-    {
-        let ref mut decoder = PacketDecoder::new(&mut buf);
-        let result = black_box(T::decode(decoder)).unwrap();
-        unsafe { buf.set_pos(0) };
-        drop(result);
-    }
-    {
-        let ref mut decoder = PacketDecoder::new(&mut buf);
-        let result = black_box(T::decode(decoder));
-        let result = result.unwrap();
-        unsafe { buf.set_pos(0) };
-        drop(result);
-    }
 
     group.bench_function("deserialize", |b| {
         b.iter(|| {
-            unsafe { buf.set_pos(0) };
             let ref mut decoder = PacketDecoder::new(&mut buf);
-            let _result = black_box(T::decode(decoder)).unwrap();
+            let _result = black_box(&T::decode(decoder).unwrap());
+            unsafe { buf.set_pos(0) };
         })
     });
     unsafe { buf.set_pos(0) };
