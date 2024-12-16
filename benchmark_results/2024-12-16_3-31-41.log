@@ -1,0 +1,2078 @@
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+serialization bench type = rust_serialization_benchmark::datasets::log::Logs
+log/serialization/serialize
+                        time:   [1.1415 ms 1.1443 ms 1.1476 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+breakpoint2
+breakpoint2
+breakpoint3
+breakpoint4
+bp5
+breakpoint1
+breakpoint2
+breakpoint3
+breakpoint4
+breakpoint5
+bp5.2
+log/serialization/deserialize
+                        time:   [7.3115 ms 7.3136 ms 7.3161 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high severe
+log/serialization/size 765778
+log/serialization/zlib 305641
+log/serialization/zstd 259060
+log/serialization/zstd_time time:   [4.0753 ms 4.0753 ms 4.0753 ms] 63 MB/s
+
+log/bilrost/serialize (encode)
+                        time:   [702.77 µs 703.72 µs 704.52 µs]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+log/bilrost/serialize (prepend)
+                        time:   [619.85 µs 620.18 µs 620.56 µs]
+Found 5 outliers among 100 measurements (5.00%)
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+log/bilrost/deserialize time:   [3.2313 ms 3.2489 ms 3.2759 ms]
+Found 11 outliers among 100 measurements (11.00%)
+  1 (1.00%) high mild
+  10 (10.00%) high severe
+log/bilrost/size 874632
+log/bilrost/zlib 355446
+log/bilrost/zstd 311723
+log/bilrost/zstd_time time:   [5.1742 ms 5.1742 ms 5.1742 ms] 60 MB/s
+
+log/bincode1/serialize  time:   [525.55 µs 525.80 µs 526.11 µs]
+Found 23 outliers among 100 measurements (23.00%)
+  12 (12.00%) low severe
+  2 (2.00%) low mild
+  3 (3.00%) high mild
+  6 (6.00%) high severe
+log/bincode1/deserialize
+                        time:   [1.9825 ms 1.9841 ms 1.9860 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high severe
+log/bincode1/size 1045784
+log/bincode1/zlib 373127
+log/bincode1/zstd 311761
+log/bincode1/zstd_time time:   [4.8766 ms 4.8766 ms 4.8766 ms] 63 MB/s
+
+log/bincode/serialize   time:   [299.45 µs 299.85 µs 300.40 µs]
+Found 9 outliers among 100 measurements (9.00%)
+  5 (5.00%) high mild
+  4 (4.00%) high severe
+log/bincode/deserialize time:   [2.5159 ms 2.5181 ms 2.5207 ms]
+Found 8 outliers among 100 measurements (8.00%)
+  3 (3.00%) high mild
+  5 (5.00%) high severe
+log/bincode/size 741295
+log/bincode/zlib 303944
+log/bincode/zstd 257153
+log/bincode/zstd_time time:   [3.9682 ms 3.9682 ms 3.9682 ms] 64 MB/s
+
+log/bitcode/serialize   time:   [138.85 µs 139.07 µs 139.36 µs]
+Found 8 outliers among 100 measurements (8.00%)
+  2 (2.00%) low mild
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+log/bitcode/deserialize time:   [1.4633 ms 1.4641 ms 1.4652 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  3 (3.00%) high mild
+  4 (4.00%) high severe
+log/bitcode/size 703710
+log/bitcode/zlib 288826
+log/bitcode/zstd 229755
+log/bitcode/zstd_time time:   [2.4400 ms 2.4400 ms 2.4400 ms] 94 MB/s
+
+log/borsh/serialize     time:   [548.47 µs 548.76 µs 549.13 µs]
+Found 8 outliers among 100 measurements (8.00%)
+  1 (1.00%) low mild
+  3 (3.00%) high mild
+  4 (4.00%) high severe
+log/borsh/deserialize   time:   [2.2115 ms 2.2287 ms 2.2541 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  5 (5.00%) high severe
+log/borsh/size 885780
+log/borsh/zlib 362204
+log/borsh/zstd 286514
+log/borsh/zstd_time time:   [4.4488 ms 4.4488 ms 4.4488 ms] 64 MB/s
+
+log/serde-brief/serialize
+                        time:   [1.5225 ms 1.5235 ms 1.5246 ms]
+Found 15 outliers among 100 measurements (15.00%)
+  2 (2.00%) low mild
+  7 (7.00%) high mild
+  6 (6.00%) high severe
+log/serde-brief/deserialize
+                        time:   [4.9518 ms 4.9586 ms 4.9658 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high mild
+log/serde-brief/size 1584946
+log/serde-brief/zlib 413733
+log/serde-brief/zstd 341439
+log/serde-brief/zstd_time time:   [4.9735 ms 4.9735 ms 4.9735 ms] 68 MB/s
+
+log/capnp/serialize     time:   [774.13 µs 774.42 µs 774.76 µs]
+Found 6 outliers among 100 measurements (6.00%)
+  6 (6.00%) high mild
+log/capnp/access (validated on-demand with error)
+                        time:   [71.911 ns 72.053 ns 72.261 ns]
+Found 8 outliers among 100 measurements (8.00%)
+  2 (2.00%) low mild
+  4 (4.00%) high mild
+  2 (2.00%) high severe
+log/capnp/read (validated on-demand with error)
+                        time:   [168.35 µs 168.44 µs 168.56 µs]
+Found 8 outliers among 100 measurements (8.00%)
+  1 (1.00%) high mild
+  7 (7.00%) high severe
+log/capnp/size 1443216
+log/capnp/zlib 513986
+log/capnp/zstd 428649
+log/capnp/zstd_time time:   [6.8095 ms 6.8095 ms 6.8095 ms] 62 MB/s
+
+log/cbor4ii/serialize   time:   [588.94 µs 589.37 µs 589.92 µs]
+Found 13 outliers among 100 measurements (13.00%)
+  2 (2.00%) low mild
+  5 (5.00%) high mild
+  6 (6.00%) high severe
+log/cbor4ii/deserialize time:   [5.0122 ms 5.0166 ms 5.0215 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+log/cbor4ii/size 1407835
+log/cbor4ii/zlib 403440
+log/cbor4ii/zstd 324081
+log/cbor4ii/zstd_time time:   [4.8246 ms 4.8246 ms 4.8246 ms] 67 MB/s
+
+log/ciborium/serialize  time:   [3.2863 ms 3.2901 ms 3.2941 ms]
+Found 22 outliers among 100 measurements (22.00%)
+  17 (17.00%) low mild
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+log/ciborium/deserialize
+                        time:   [12.010 ms 12.021 ms 12.037 ms]
+Found 10 outliers among 100 measurements (10.00%)
+  2 (2.00%) low mild
+  3 (3.00%) high mild
+  5 (5.00%) high severe
+log/ciborium/size 1407835
+log/ciborium/zlib 403440
+log/ciborium/zstd 324081
+log/ciborium/zstd_time time:   [4.8377 ms 4.8377 ms 4.8377 ms] 66 MB/s
+
+log/databuf/serialize   time:   [263.52 µs 263.70 µs 263.91 µs]
+Found 7 outliers among 100 measurements (7.00%)
+  3 (3.00%) high mild
+  4 (4.00%) high severe
+log/databuf/deserialize time:   [2.0594 ms 2.0605 ms 2.0618 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+log/databuf/size 765778
+log/databuf/zlib 311715
+log/databuf/zstd 264630
+log/databuf/zstd_time time:   [4.0596 ms 4.0596 ms 4.0596 ms] 65 MB/s
+
+log/dlhn/serialize      time:   [735.63 µs 738.55 µs 740.84 µs]
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) low severe
+  1 (1.00%) low mild
+log/dlhn/deserialize    time:   [2.5284 ms 2.5313 ms 2.5342 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+log/dlhn/size 724953
+log/dlhn/zlib 301446
+log/dlhn/zstd 253629
+log/dlhn/zstd_time time:   [3.7479 ms 3.7479 ms 3.7479 ms] 67 MB/s
+
+log/flatbuffers/serialize
+                        time:   [1.0099 ms 1.0101 ms 1.0104 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high severe
+log/flatbuffers/access (unvalidated)
+                        time:   [2.4733 ns 2.4739 ns 2.4747 ns]
+Found 7 outliers among 100 measurements (7.00%)
+  1 (1.00%) low severe
+  1 (1.00%) low mild
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+log/flatbuffers/access (validated upfront with error)
+                        time:   [1.9867 ms 1.9893 ms 1.9919 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+log/flatbuffers/read (unvalidated)
+                        time:   [49.009 µs 49.043 µs 49.083 µs]
+Found 5 outliers among 100 measurements (5.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+log/flatbuffers/read (validated upfront with error)
+                        time:   [2.1427 ms 2.1449 ms 2.1475 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+log/flatbuffers/size 1276368
+log/flatbuffers/zlib 468539
+log/flatbuffers/zstd 388832
+log/flatbuffers/zstd_time time:   [5.1536 ms 5.1536 ms 5.1536 ms] 75 MB/s
+
+log/msgpacker/serialize time:   [1.2385 ms 1.2412 ms 1.2438 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  9 (9.00%) low severe
+log/msgpacker/deserialize
+                        time:   [2.6096 ms 2.6113 ms 2.6130 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) low mild
+  1 (1.00%) high severe
+log/msgpacker/size 764996
+log/msgpacker/zlib 315291
+log/msgpacker/zstd 264898
+log/msgpacker/zstd_time time:   [3.9031 ms 3.9031 ms 3.9031 ms] 67 MB/s
+
+log/nachricht-serde/serialize
+                        time:   [5.3739 ms 5.3784 ms 5.3841 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  1 (1.00%) high mild
+  5 (5.00%) high severe
+log/nachricht-serde/deserialize
+                        time:   [4.1121 ms 4.1151 ms 4.1183 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high mild
+log/nachricht-serde/size 818669
+log/nachricht-serde/zlib 332556
+log/nachricht-serde/zstd 285514
+log/nachricht-serde/zstd_time time:   [4.3607 ms 4.3607 ms 4.3607 ms] 65 MB/s
+
+log/parity-scale-codec/serialize
+                        time:   [647.71 µs 648.08 µs 648.53 µs]
+Found 12 outliers among 100 measurements (12.00%)
+  2 (2.00%) low mild
+  2 (2.00%) high mild
+  8 (8.00%) high severe
+log/parity-scale-codec/deserialize
+                        time:   [2.2217 ms 2.2232 ms 2.2249 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  1 (1.00%) high mild
+  3 (3.00%) high severe
+log/parity-scale-codec/size 765778
+log/parity-scale-codec/zlib 311743
+log/parity-scale-codec/zstd 264518
+log/parity-scale-codec/zstd_time time:   [3.8373 ms 3.8373 ms 3.8373 ms] 68 MB/s
+
+log/postcard/serialize  time:   [420.83 µs 421.24 µs 421.80 µs]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low mild
+  1 (1.00%) high mild
+  7 (7.00%) high severe
+log/postcard/deserialize
+                        time:   [2.2281 ms 2.2298 ms 2.2319 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high severe
+log/postcard/size 724953
+log/postcard/zlib 302399
+log/postcard/zstd 253747
+log/postcard/zstd_time time:   [3.7902 ms 3.7902 ms 3.7902 ms] 66 MB/s
+
+log/pot/serialize       time:   [2.2589 ms 2.2603 ms 2.2621 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  2 (2.00%) high mild
+  4 (4.00%) high severe
+log/pot/deserialize     time:   [6.3300 ms 6.3385 ms 6.3463 ms]
+Found 16 outliers among 100 measurements (16.00%)
+  14 (14.00%) low severe
+  2 (2.00%) low mild
+log/pot/size 971922
+log/pot/zlib 372513
+log/pot/zstd 304122
+log/pot/zstd_time time:   [4.7731 ms 4.7731 ms 4.7731 ms] 63 MB/s
+
+log/prost/serialize (populate + encode)
+                        time:   [2.4815 ms 2.4833 ms 2.4857 ms]
+Found 14 outliers among 100 measurements (14.00%)
+  8 (8.00%) low mild
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+log/prost/serialize (encode)
+                        time:   [923.54 µs 923.86 µs 924.24 µs]
+Found 6 outliers among 100 measurements (6.00%)
+  2 (2.00%) low mild
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+log/prost/deserialize   time:   [3.2968 ms 3.3004 ms 3.3047 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  1 (1.00%) high mild
+  1 (1.00%) high severe
+log/prost/size 884628
+log/prost/zlib 363130
+log/prost/zstd 315494
+log/prost/zstd_time time:   [5.0849 ms 5.0849 ms 5.0849 ms] 62 MB/s
+
+log/rkyv/serialize      time:   [244.60 µs 244.79 µs 245.04 µs]
+log/rkyv/access (unvalidated)
+                        time:   [1.2364 ns 1.2367 ns 1.2371 ns]
+Found 8 outliers among 100 measurements (8.00%)
+  1 (1.00%) low severe
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+  4 (4.00%) high severe
+log/rkyv/access (validated upfront with error)
+                        time:   [615.01 µs 617.13 µs 619.20 µs]
+Found 21 outliers among 100 measurements (21.00%)
+  21 (21.00%) high severe
+log/rkyv/read (unvalidated)
+                        time:   [10.492 µs 10.512 µs 10.544 µs]
+Found 8 outliers among 100 measurements (8.00%)
+  1 (1.00%) low mild
+  1 (1.00%) high mild
+  6 (6.00%) high severe
+log/rkyv/read (validated upfront with error)
+                        time:   [620.42 µs 621.36 µs 622.94 µs]
+Found 12 outliers among 100 measurements (12.00%)
+  1 (1.00%) low mild
+  1 (1.00%) high mild
+  10 (10.00%) high severe
+log/rkyv/update (unvalidated)
+                        time:   [7.5255 µs 7.5288 µs 7.5329 µs]
+Found 10 outliers among 100 measurements (10.00%)
+  2 (2.00%) low mild
+  4 (4.00%) high mild
+  4 (4.00%) high severe
+log/rkyv/deserialize (unvalidated)
+                        time:   [1.5998 ms 1.6010 ms 1.6022 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+log/rkyv/deserialize (validated upfront with error)
+                        time:   [2.1921 ms 2.1947 ms 2.1977 ms]
+Found 13 outliers among 100 measurements (13.00%)
+  3 (3.00%) low mild
+  3 (3.00%) high mild
+  7 (7.00%) high severe
+log/rkyv/size 1011488
+log/rkyv/zlib 393526
+log/rkyv/zstd 326517
+log/rkyv/zstd_time time:   [4.9877 ms 4.9877 ms 4.9877 ms] 65 MB/s
+
+log/rmp-serde/serialize time:   [1.3006 ms 1.3036 ms 1.3074 ms]
+log/rmp-serde/deserialize
+                        time:   [3.2376 ms 3.2403 ms 3.2435 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  1 (1.00%) low mild
+  1 (1.00%) high mild
+  4 (4.00%) high severe
+log/rmp-serde/size 784997
+log/rmp-serde/zlib 325384
+log/rmp-serde/zstd 278219
+log/rmp-serde/zstd_time time:   [4.1366 ms 4.1366 ms 4.1366 ms] 67 MB/s
+
+log/ron/serialize       time:   [11.300 ms 11.306 ms 11.314 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  1 (1.00%) high mild
+  6 (6.00%) high severe
+log/ron/deserialize     time:   [15.670 ms 15.684 ms 15.700 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+log/ron/size 1607459
+log/ron/zlib 449158
+log/ron/zstd 349713
+log/ron/zstd_time time:   [5.9751 ms 5.9751 ms 5.9751 ms] 58 MB/s
+
+log/savefile/serialize  time:   [192.31 µs 192.42 µs 192.55 µs]
+Found 6 outliers among 100 measurements (6.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+log/savefile/deserialize
+                        time:   [2.2033 ms 2.2049 ms 2.2069 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  1 (1.00%) high mild
+  5 (5.00%) high severe
+log/savefile/size 1045800
+log/savefile/zlib 373140
+log/savefile/zstd 311777
+log/savefile/zstd_time time:   [4.6809 ms 4.6809 ms 4.6809 ms] 66 MB/s
+
+log/serde_bare/serialize
+                        time:   [668.04 µs 668.55 µs 669.12 µs]
+Found 9 outliers among 100 measurements (9.00%)
+  4 (4.00%) high mild
+  5 (5.00%) high severe
+log/serde_bare/deserialize
+                        time:   [2.1336 ms 2.1352 ms 2.1369 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high severe
+log/serde_bare/size 765778
+log/serde_bare/zlib 311715
+log/serde_bare/zstd 264630
+log/serde_bare/zstd_time time:   [3.9638 ms 3.9638 ms 3.9638 ms] 66 MB/s
+
+log/serde_cbor/serialize
+                        time:   [2.0284 ms 2.0336 ms 2.0432 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  1 (1.00%) high mild
+  3 (3.00%) high severe
+log/serde_cbor/deserialize
+                        time:   [5.2590 ms 5.2646 ms 5.2708 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  1 (1.00%) high mild
+  1 (1.00%) high severe
+log/serde_cbor/size 1407835
+log/serde_cbor/zlib 403440
+log/serde_cbor/zstd 324081
+log/serde_cbor/zstd_time time:   [4.9248 ms 4.9248 ms 4.9248 ms] 65 MB/s
+
+log/serde_json/serialize
+                        time:   [3.8490 ms 3.8523 ms 3.8560 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+log/serde_json/deserialize
+                        time:   [5.3908 ms 5.3944 ms 5.3983 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  1 (1.00%) high mild
+  1 (1.00%) high severe
+log/serde_json/size 1827461
+log/serde_json/zlib 470560
+log/serde_json/zstd 361090
+log/serde_json/zstd_time time:   [5.7953 ms 5.7953 ms 5.7953 ms] 62 MB/s
+
+log/simd-json/serialize time:   [2.0720 ms 2.0763 ms 2.0837 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+log/simd-json/deserialize
+                        time:   [4.7106 ms 4.7136 ms 4.7164 ms]
+Found 22 outliers among 100 measurements (22.00%)
+  2 (2.00%) low severe
+  17 (17.00%) low mild
+  3 (3.00%) high mild
+log/simd-json/size 1827461
+log/simd-json/zlib 470560
+log/simd-json/zstd 361090
+log/simd-json/zstd_time time:   [5.8197 ms 5.8197 ms 5.8197 ms] 62 MB/s
+
+log/speedy/serialize    time:   [195.29 µs 195.45 µs 195.62 µs]
+Found 2 outliers among 100 measurements (2.00%)
+  1 (1.00%) high mild
+  1 (1.00%) high severe
+log/speedy/deserialize  time:   [1.8011 ms 1.8021 ms 1.8033 ms]
+log/speedy/size 885780
+log/speedy/zlib 362204
+log/speedy/zstd 286514
+log/speedy/zstd_time time:   [4.2508 ms 4.2508 ms 4.2508 ms] 67 MB/s
+
+log/nanoserde/serialize time:   [263.18 µs 263.42 µs 263.72 µs]
+Found 7 outliers among 100 measurements (7.00%)
+  2 (2.00%) low mild
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+log/nanoserde/deserialize
+                        time:   [2.1309 ms 2.1332 ms 2.1359 ms]
+Found 11 outliers among 100 measurements (11.00%)
+  3 (3.00%) low mild
+  2 (2.00%) high mild
+  6 (6.00%) high severe
+log/nanoserde/size 1045784
+log/nanoserde/zlib 373127
+log/nanoserde/zstd 311761
+log/nanoserde/zstd_time time:   [4.6321 ms 4.6321 ms 4.6321 ms] 67 MB/s
+
+log/wiring/serialize    time:   [191.10 µs 191.21 µs 191.33 µs]
+Found 8 outliers among 100 measurements (8.00%)
+  6 (6.00%) high mild
+  2 (2.00%) high severe
+log/wiring/deserialize  time:   [1.9880 ms 1.9898 ms 1.9918 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+log/wiring/size 1045784
+log/wiring/zlib 337930
+log/wiring/zstd 276188
+log/wiring/zstd_time time:   [4.1871 ms 4.1871 ms 4.1871 ms] 65 MB/s
+
+serialization bench type = rust_serialization_benchmark::datasets::mesh::Mesh
+mesh/serialization/serialize
+                        time:   [1.3659 ms 1.3672 ms 1.3684 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+breakpoint2
+breakpoint2
+breakpoint3
+breakpoint4
+bp5
+breakpoint1
+breakpoint2
+breakpoint3
+breakpoint4
+breakpoint5
+bp5.2
+mesh/serialization/deserialize
+                        time:   [2.8635 ms 2.8680 ms 2.8728 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  6 (6.00%) high mild
+  1 (1.00%) high severe
+mesh/serialization/size 6000003
+mesh/serialization/zlib 5378495
+mesh/serialization/zstd 5345900
+mesh/serialization/zstd_time time:   [7.4327 ms 7.4327 ms 7.4327 ms] 719 MB/s
+
+mesh/bilrost/serialize (encode)
+                        time:   [6.6414 ms 6.6475 ms 6.6577 ms]
+Found 10 outliers among 100 measurements (10.00%)
+  4 (4.00%) high mild
+  6 (6.00%) high severe
+mesh/bilrost/serialize (prepend)
+                        time:   [8.7521 ms 8.7568 ms 8.7617 ms]
+mesh/bilrost/deserialize
+                        time:   [9.4085 ms 9.4141 ms 9.4211 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  4 (4.00%) high mild
+  3 (3.00%) high severe
+mesh/bilrost/size 8625005
+mesh/bilrost/zlib 6443961
+mesh/bilrost/zstd 6231572
+mesh/bilrost/zstd_time time:   [71.0317 ms 71.0317 ms 71.0317 ms] 87 MB/s
+
+mesh/bincode1/serialize time:   [5.1153 ms 5.1194 ms 5.1244 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) high mild
+  8 (8.00%) high severe
+mesh/bincode1/deserialize
+                        time:   [5.7900 ms 5.7905 ms 5.7910 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high severe
+mesh/bincode1/size 6000008
+mesh/bincode1/zlib 5378500
+mesh/bincode1/zstd 5345890
+mesh/bincode1/zstd_time time:   [7.5147 ms 7.5147 ms 7.5147 ms] 711 MB/s
+
+mesh/bincode/serialize  time:   [2.8618 ms 2.8623 ms 2.8628 ms]
+Found 12 outliers among 100 measurements (12.00%)
+  4 (4.00%) high mild
+  8 (8.00%) high severe
+mesh/bincode/deserialize
+                        time:   [1.3906 ms 1.3912 ms 1.3921 ms]
+Found 8 outliers among 100 measurements (8.00%)
+  6 (6.00%) high mild
+  2 (2.00%) high severe
+mesh/bincode/size 6000005
+mesh/bincode/zlib 5378497
+mesh/bincode/zstd 5345897
+mesh/bincode/zstd_time time:   [7.4690 ms 7.4690 ms 7.4690 ms] 715 MB/s
+
+mesh/bitcode/serialize  time:   [1.3992 ms 1.4000 ms 1.4008 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+mesh/bitcode/deserialize
+                        time:   [795.68 µs 796.44 µs 797.54 µs]
+Found 15 outliers among 100 measurements (15.00%)
+  1 (1.00%) low severe
+  7 (7.00%) high mild
+  7 (7.00%) high severe
+mesh/bitcode/size 6000006
+mesh/bitcode/zlib 5182295
+mesh/bitcode/zstd 4923880
+mesh/bitcode/zstd_time time:   [12.7941 ms 12.7941 ms 12.7941 ms] 384 MB/s
+
+mesh/borsh/serialize    time:   [5.9935 ms 6.0388 ms 6.0829 ms]
+mesh/borsh/deserialize  time:   [4.3158 ms 4.3193 ms 4.3242 ms]
+Found 8 outliers among 100 measurements (8.00%)
+  3 (3.00%) high mild
+  5 (5.00%) high severe
+mesh/borsh/size 6000004
+mesh/borsh/zlib 5378496
+mesh/borsh/zstd 5345889
+mesh/borsh/zstd_time time:   [7.5641 ms 7.5641 ms 7.5641 ms] 706 MB/s
+
+mesh/serde-brief/serialize
+                        time:   [22.805 ms 22.816 ms 22.830 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  4 (4.00%) high mild
+  5 (5.00%) high severe
+mesh/serde-brief/deserialize
+                        time:   [39.696 ms 39.725 ms 39.757 ms]
+Found 8 outliers among 100 measurements (8.00%)
+  2 (2.00%) low mild
+  2 (2.00%) high mild
+  4 (4.00%) high severe
+mesh/serde-brief/size 15750015
+mesh/serde-brief/zlib 8024540
+mesh/serde-brief/zstd 6816643
+mesh/serde-brief/zstd_time time:   [93.3960 ms 93.3960 ms 93.3960 ms] 72 MB/s
+
+mesh/capnp/serialize    time:   [5.3760 ms 5.3838 ms 5.3925 ms]
+Found 12 outliers among 100 measurements (12.00%)
+  7 (7.00%) high mild
+  5 (5.00%) high severe
+mesh/capnp/access (validated on-demand with error)
+                        time:   [105.84 ns 105.98 ns 106.15 ns]
+Found 8 outliers among 100 measurements (8.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+  5 (5.00%) high severe
+mesh/capnp/read (validated on-demand with error)
+                        time:   [2.1908 ms 2.1927 ms 2.1954 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+mesh/capnp/size 14000088
+mesh/capnp/zlib 7130367
+mesh/capnp/zstd 6051062
+mesh/capnp/zstd_time time:   [82.4947 ms 82.4947 ms 82.4947 ms] 73 MB/s
+
+mesh/cbor4ii/serialize  time:   [10.022 ms 10.026 ms 10.032 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  1 (1.00%) high mild
+  6 (6.00%) high severe
+mesh/cbor4ii/deserialize
+                        time:   [51.551 ms 51.601 ms 51.656 ms]
+Found 15 outliers among 100 measurements (15.00%)
+  12 (12.00%) low mild
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+mesh/cbor4ii/size 13125016
+mesh/cbor4ii/zlib 7524114
+mesh/cbor4ii/zstd 6757967
+mesh/cbor4ii/zstd_time time:   [91.2103 ms 91.2103 ms 91.2103 ms] 74 MB/s
+
+mesh/ciborium/serialize time:   [67.755 ms 68.019 ms 68.277 ms]
+mesh/ciborium/deserialize
+                        time:   [121.27 ms 121.36 ms 121.45 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) low mild
+mesh/ciborium/size 13122324
+mesh/ciborium/zlib 7524660
+mesh/ciborium/zstd 6759658
+mesh/ciborium/zstd_time time:   [92.3922 ms 92.3922 ms 92.3922 ms] 73 MB/s
+
+mesh/databuf/serialize  time:   [2.3970 ms 2.3975 ms 2.3981 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  2 (2.00%) high mild
+  5 (5.00%) high severe
+mesh/databuf/deserialize
+                        time:   [5.3121 ms 5.3187 ms 5.3255 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high mild
+mesh/databuf/size 6000003
+mesh/databuf/zlib 5378495
+mesh/databuf/zstd 5345900
+mesh/databuf/zstd_time time:   [7.6270 ms 7.6270 ms 7.6270 ms] 700 MB/s
+
+mesh/dlhn/serialize     time:   [6.4031 ms 6.4059 ms 6.4097 ms]
+Found 10 outliers among 100 measurements (10.00%)
+  5 (5.00%) high mild
+  5 (5.00%) high severe
+mesh/dlhn/deserialize   time:   [7.3631 ms 7.3654 ms 7.3681 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+mesh/dlhn/size 6000003
+mesh/dlhn/zlib 5378495
+mesh/dlhn/zstd 5345900
+mesh/dlhn/zstd_time time:   [7.5976 ms 7.5976 ms 7.5976 ms] 703 MB/s
+
+mesh/flatbuffers/serialize
+                        time:   [864.11 µs 864.57 µs 865.04 µs]
+Found 4 outliers among 100 measurements (4.00%)
+  3 (3.00%) high mild
+  1 (1.00%) high severe
+mesh/flatbuffers/access (unvalidated)
+                        time:   [2.4733 ns 2.4743 ns 2.4754 ns]
+Found 11 outliers among 100 measurements (11.00%)
+  1 (1.00%) low mild
+  3 (3.00%) high mild
+  7 (7.00%) high severe
+mesh/flatbuffers/access (validated upfront with error)
+                        time:   [39.957 ns 39.968 ns 39.981 ns]
+Found 7 outliers among 100 measurements (7.00%)
+  3 (3.00%) low mild
+  3 (3.00%) high mild
+  1 (1.00%) high severe
+mesh/flatbuffers/read (unvalidated)
+                        time:   [77.320 µs 77.349 µs 77.384 µs]
+Found 9 outliers among 100 measurements (9.00%)
+  7 (7.00%) high mild
+  2 (2.00%) high severe
+mesh/flatbuffers/read (validated upfront with error)
+                        time:   [77.351 µs 77.379 µs 77.411 µs]
+Found 12 outliers among 100 measurements (12.00%)
+  1 (1.00%) low mild
+  3 (3.00%) high mild
+  8 (8.00%) high severe
+mesh/flatbuffers/size 6000024
+mesh/flatbuffers/zlib 5378434
+mesh/flatbuffers/zstd 5345910
+mesh/flatbuffers/zstd_time time:   [7.4589 ms 7.4589 ms 7.4589 ms] 716 MB/s
+
+mesh/msgpacker/serialize
+                        time:   [18.382 ms 18.385 ms 18.387 ms]
+mesh/msgpacker/deserialize
+                        time:   [5.9068 ms 5.9101 ms 5.9134 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  5 (5.00%) high mild
+mesh/msgpacker/size 7500005
+mesh/msgpacker/zlib 6058442
+mesh/msgpacker/zstd 6014337
+mesh/msgpacker/zstd_time time:   [9.6397 ms 9.6397 ms 9.6397 ms] 623 MB/s
+
+mesh/nachricht-serde/serialize
+                        time:   [119.01 ms 119.08 ms 119.16 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  1 (1.00%) high mild
+  3 (3.00%) high severe
+mesh/nachricht-serde/deserialize
+                        time:   [32.747 ms 32.857 ms 33.055 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  1 (1.00%) high mild
+  4 (4.00%) high severe
+mesh/nachricht-serde/size 8125037
+mesh/nachricht-serde/zlib 6493484
+mesh/nachricht-serde/zstd 6386940
+mesh/nachricht-serde/zstd_time time:   [69.2959 ms 69.2959 ms 69.2959 ms] 92 MB/s
+
+mesh/parity-scale-codec/serialize
+                        time:   [4.7414 ms 4.7845 ms 4.8291 ms]
+mesh/parity-scale-codec/deserialize
+                        time:   [4.5279 ms 4.5381 ms 4.5495 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  1 (1.00%) high mild
+  5 (5.00%) high severe
+mesh/parity-scale-codec/size 6000004
+mesh/parity-scale-codec/zlib 5378496
+mesh/parity-scale-codec/zstd 5345889
+mesh/parity-scale-codec/zstd_time time:   [7.4989 ms 7.4989 ms 7.4989 ms] 712 MB/s
+
+mesh/postcard/serialize time:   [489.55 µs 489.82 µs 490.13 µs]
+Found 11 outliers among 100 measurements (11.00%)
+  1 (1.00%) low mild
+  6 (6.00%) high mild
+  4 (4.00%) high severe
+mesh/postcard/deserialize
+                        time:   [1.3215 ms 1.3223 ms 1.3233 ms]
+Found 10 outliers among 100 measurements (10.00%)
+  2 (2.00%) low mild
+  7 (7.00%) high mild
+  1 (1.00%) high severe
+mesh/postcard/size 6000003
+mesh/postcard/zlib 5378495
+mesh/postcard/zstd 5345900
+mesh/postcard/zstd_time time:   [7.8262 ms 7.8262 ms 7.8262 ms] 683 MB/s
+
+mesh/pot/serialize      time:   [38.347 ms 38.381 ms 38.431 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  6 (6.00%) high mild
+  3 (3.00%) high severe
+mesh/pot/deserialize    time:   [69.846 ms 69.908 ms 69.975 ms]
+Found 13 outliers among 100 measurements (13.00%)
+  7 (7.00%) low mild
+  4 (4.00%) high mild
+  2 (2.00%) high severe
+mesh/pot/size 10122342
+mesh/pot/zlib 6814618
+mesh/pot/zstd 6852251
+mesh/pot/zstd_time time:   [81.7802 ms 81.7802 ms 81.7802 ms] 83 MB/s
+
+mesh/prost/serialize (populate + encode)
+                        time:   [8.4778 ms 8.4883 ms 8.5017 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  3 (3.00%) high mild
+  4 (4.00%) high severe
+mesh/prost/serialize (encode)
+                        time:   [7.7462 ms 7.7488 ms 7.7528 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  3 (3.00%) high mild
+  1 (1.00%) high severe
+mesh/prost/deserialize  time:   [10.832 ms 10.839 ms 10.849 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  1 (1.00%) low mild
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+mesh/prost/size 8750000
+mesh/prost/zlib 6665735
+mesh/prost/zstd 6421871
+mesh/prost/zstd_time time:   [71.4720 ms 71.4720 ms 71.4720 ms] 89 MB/s
+
+mesh/rkyv/serialize     time:   [237.36 µs 237.43 µs 237.51 µs]
+Found 4 outliers among 100 measurements (4.00%)
+  1 (1.00%) low mild
+  3 (3.00%) high mild
+mesh/rkyv/access (unvalidated)
+                        time:   [1.2363 ns 1.2366 ns 1.2369 ns]
+Found 11 outliers among 100 measurements (11.00%)
+  3 (3.00%) high mild
+  8 (8.00%) high severe
+mesh/rkyv/access (validated upfront with error)
+                        time:   [5.2670 ns 5.2888 ns 5.3295 ns]
+Found 10 outliers among 100 measurements (10.00%)
+  3 (3.00%) high mild
+  7 (7.00%) high severe
+mesh/rkyv/read (unvalidated)
+                        time:   [48.363 µs 48.400 µs 48.444 µs]
+Found 11 outliers among 100 measurements (11.00%)
+  3 (3.00%) low severe
+  1 (1.00%) low mild
+  3 (3.00%) high mild
+  4 (4.00%) high severe
+mesh/rkyv/read (validated upfront with error)
+                        time:   [38.666 µs 38.685 µs 38.710 µs]
+Found 4 outliers among 100 measurements (4.00%)
+  4 (4.00%) high severe
+mesh/rkyv/update (unvalidated)
+                        time:   [99.029 µs 99.145 µs 99.270 µs]
+Found 8 outliers among 100 measurements (8.00%)
+  1 (1.00%) low severe
+  5 (5.00%) high mild
+  2 (2.00%) high severe
+mesh/rkyv/deserialize (unvalidated)
+                        time:   [197.72 µs 197.91 µs 198.11 µs]
+Found 7 outliers among 100 measurements (7.00%)
+  7 (7.00%) high mild
+mesh/rkyv/deserialize (validated upfront with error)
+                        time:   [197.63 µs 197.79 µs 197.97 µs]
+Found 9 outliers among 100 measurements (9.00%)
+  2 (2.00%) low mild
+  3 (3.00%) high mild
+  4 (4.00%) high severe
+mesh/rkyv/size 6000008
+mesh/rkyv/zlib 5378500
+mesh/rkyv/zstd 5345892
+mesh/rkyv/zstd_time time:   [7.3771 ms 7.3771 ms 7.3771 ms] 724 MB/s
+
+mesh/rmp-serde/serialize
+                        time:   [15.364 ms 15.369 ms 15.378 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+mesh/rmp-serde/deserialize
+                        time:   [18.010 ms 18.020 ms 18.033 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  3 (3.00%) high mild
+  6 (6.00%) high severe
+mesh/rmp-serde/size 8125006
+mesh/rmp-serde/zlib 6494876
+mesh/rmp-serde/zstd 6391037
+mesh/rmp-serde/zstd_time time:   [67.7796 ms 67.7796 ms 67.7796 ms] 94 MB/s
+
+mesh/ron/serialize      time:   [176.49 ms 176.71 ms 176.94 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+mesh/ron/deserialize    time:   [236.09 ms 236.55 ms 237.00 ms]
+Found 21 outliers among 100 measurements (21.00%)
+  16 (16.00%) low severe
+  3 (3.00%) low mild
+  2 (2.00%) high mild
+mesh/ron/size 22192885
+mesh/ron/zlib 8970395
+mesh/ron/zstd 8138755
+mesh/ron/zstd_time time:   [150.4985 ms 150.4985 ms 150.4985 ms] 54 MB/s
+
+mesh/savefile/serialize time:   [237.25 µs 237.34 µs 237.42 µs]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) low mild
+  1 (1.00%) high mild
+  1 (1.00%) high severe
+mesh/savefile/deserialize
+                        time:   [237.96 µs 238.02 µs 238.09 µs]
+Found 9 outliers among 100 measurements (9.00%)
+  8 (8.00%) high mild
+  1 (1.00%) high severe
+mesh/savefile/size 6000024
+mesh/savefile/zlib 5378513
+mesh/savefile/zstd 5345893
+mesh/savefile/zstd_time time:   [7.4225 ms 7.4225 ms 7.4225 ms] 720 MB/s
+
+mesh/serde_bare/serialize
+                        time:   [6.2383 ms 6.2693 ms 6.3017 ms]
+Found 39 outliers among 100 measurements (39.00%)
+  7 (7.00%) low severe
+  7 (7.00%) low mild
+  1 (1.00%) high mild
+  24 (24.00%) high severe
+mesh/serde_bare/deserialize
+                        time:   [5.4005 ms 5.4028 ms 5.4057 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+mesh/serde_bare/size 6000003
+mesh/serde_bare/zlib 5378495
+mesh/serde_bare/zstd 5345900
+mesh/serde_bare/zstd_time time:   [7.5075 ms 7.5075 ms 7.5075 ms] 712 MB/s
+
+mesh/serde_cbor/serialize
+                        time:   [35.235 ms 35.252 ms 35.270 ms]
+Found 8 outliers among 100 measurements (8.00%)
+  2 (2.00%) low severe
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+mesh/serde_cbor/deserialize
+                        time:   [47.551 ms 47.579 ms 47.616 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  4 (4.00%) high severe
+mesh/serde_cbor/size 13122324
+mesh/serde_cbor/zlib 7524660
+mesh/serde_cbor/zstd 6759658
+mesh/serde_cbor/zstd_time time:   [90.3822 ms 90.3822 ms 90.3822 ms] 74 MB/s
+
+mesh/serde_json/serialize
+                        time:   [87.172 ms 87.224 ms 87.295 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  1 (1.00%) high mild
+  3 (3.00%) high severe
+mesh/serde_json/deserialize
+                        time:   [85.059 ms 85.474 ms 86.108 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  4 (4.00%) high mild
+  5 (5.00%) high severe
+mesh/serde_json/size 26192883
+mesh/serde_json/zlib 9566084
+mesh/serde_json/zstd 8586741
+mesh/serde_json/zstd_time time:   [155.0220 ms 155.0220 ms 155.0220 ms] 55 MB/s
+
+mesh/simd-json/serialize
+                        time:   [53.147 ms 53.175 ms 53.212 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  4 (4.00%) high severe
+mesh/simd-json/deserialize
+                        time:   [72.172 ms 72.212 ms 72.255 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+mesh/simd-json/size 26192883
+mesh/simd-json/zlib 9566084
+mesh/simd-json/zstd 8586741
+mesh/simd-json/zstd_time time:   [154.7609 ms 154.7609 ms 154.7609 ms] 55 MB/s
+
+mesh/speedy/serialize   time:   [238.06 µs 238.12 µs 238.18 µs]
+Found 5 outliers among 100 measurements (5.00%)
+  2 (2.00%) low mild
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+mesh/speedy/deserialize time:   [237.45 µs 237.52 µs 237.60 µs]
+Found 4 outliers among 100 measurements (4.00%)
+  2 (2.00%) low mild
+  1 (1.00%) high mild
+  1 (1.00%) high severe
+mesh/speedy/size 6000004
+mesh/speedy/zlib 5378496
+mesh/speedy/zstd 5345889
+mesh/speedy/zstd_time time:   [7.4477 ms 7.4477 ms 7.4477 ms] 717 MB/s
+
+mesh/nanoserde/serialize
+                        time:   [1.8824 ms 1.8882 ms 1.8979 ms]
+Found 15 outliers among 100 measurements (15.00%)
+  2 (2.00%) low severe
+  2 (2.00%) low mild
+  7 (7.00%) high mild
+  4 (4.00%) high severe
+mesh/nanoserde/deserialize
+                        time:   [1.1029 ms 1.1035 ms 1.1043 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+mesh/nanoserde/size 6000008
+mesh/nanoserde/zlib 5378500
+mesh/nanoserde/zstd 5345890
+mesh/nanoserde/zstd_time time:   [7.3818 ms 7.3818 ms 7.3818 ms] 724 MB/s
+
+mesh/wiring/serialize   time:   [197.34 µs 197.54 µs 197.77 µs]
+Found 8 outliers among 100 measurements (8.00%)
+  1 (1.00%) low mild
+  6 (6.00%) high mild
+  1 (1.00%) high severe
+mesh/wiring/deserialize time:   [336.66 µs 336.89 µs 337.17 µs]
+Found 5 outliers among 100 measurements (5.00%)
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+mesh/wiring/size 6000008
+mesh/wiring/zlib 5378952
+mesh/wiring/zstd 5345894
+mesh/wiring/zstd_time time:   [7.4653 ms 7.4653 ms 7.4653 ms] 716 MB/s
+
+serialization bench type = rust_serialization_benchmark::datasets::minecraft_savedata::Players
+minecraft_savedata/serialization/serialize
+                        time:   [1.2014 ms 1.2039 ms 1.2061 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+breakpoint2
+breakpoint2
+breakpoint3
+breakpoint4
+bp5
+breakpoint1
+breakpoint2
+breakpoint3
+breakpoint4
+breakpoint5
+bp5.2
+minecraft_savedata/serialization/deserialize
+                        time:   [5.7422 ms 5.7481 ms 5.7567 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  1 (1.00%) high mild
+  4 (4.00%) high severe
+minecraft_savedata/serialization/size 356311
+minecraft_savedata/serialization/zlib 211955
+minecraft_savedata/serialization/zstd 195923
+minecraft_savedata/serialization/zstd_time time:   [2.3604 ms 2.3604 ms 2.3604 ms] 83 MB/s
+
+minecraft_savedata/bilrost/serialize (encode)
+                        time:   [938.48 µs 939.15 µs 939.97 µs]
+Found 7 outliers among 100 measurements (7.00%)
+  6 (6.00%) high mild
+  1 (1.00%) high severe
+minecraft_savedata/bilrost/serialize (prepend)
+                        time:   [837.16 µs 837.44 µs 837.70 µs]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high severe
+minecraft_savedata/bilrost/deserialize
+                        time:   [3.2267 ms 3.2302 ms 3.2346 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  6 (6.00%) high severe
+minecraft_savedata/bilrost/size 489348
+minecraft_savedata/bilrost/zlib 281173
+minecraft_savedata/bilrost/zstd 249546
+minecraft_savedata/bilrost/zstd_time time:   [3.0820 ms 3.0820 ms 3.0820 ms] 80 MB/s
+
+minecraft_savedata/bincode1/serialize
+                        time:   [599.28 µs 599.53 µs 599.80 µs]
+Found 7 outliers among 100 measurements (7.00%)
+  4 (4.00%) high mild
+  3 (3.00%) high severe
+minecraft_savedata/bincode1/deserialize
+                        time:   [1.8799 ms 1.8819 ms 1.8847 ms]
+Found 13 outliers among 100 measurements (13.00%)
+  6 (6.00%) low mild
+  2 (2.00%) high mild
+  5 (5.00%) high severe
+minecraft_savedata/bincode1/size 569975
+minecraft_savedata/bincode1/zlib 240525
+minecraft_savedata/bincode1/zstd 232423
+minecraft_savedata/bincode1/zstd_time time:   [3.7450 ms 3.7450 ms 3.7450 ms] 62 MB/s
+
+minecraft_savedata/bincode/serialize
+                        time:   [274.63 µs 274.73 µs 274.83 µs]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high severe
+minecraft_savedata/bincode/deserialize
+                        time:   [2.0845 ms 2.0851 ms 2.0857 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high mild
+minecraft_savedata/bincode/size 367413
+minecraft_savedata/bincode/zlib 221291
+minecraft_savedata/bincode/zstd 206273
+minecraft_savedata/bincode/zstd_time time:   [2.4725 ms 2.4725 ms 2.4725 ms] 83 MB/s
+
+minecraft_savedata/bitcode/serialize
+                        time:   [132.81 µs 132.97 µs 133.20 µs]
+Found 10 outliers among 100 measurements (10.00%)
+  5 (5.00%) low mild
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+minecraft_savedata/bitcode/deserialize
+                        time:   [1.2811 ms 1.2819 ms 1.2828 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  6 (6.00%) high mild
+  1 (1.00%) high severe
+minecraft_savedata/bitcode/size 327688
+minecraft_savedata/bitcode/zlib 200947
+minecraft_savedata/bitcode/zstd 182736
+minecraft_savedata/bitcode/zstd_time time:   [752.1000 µs 752.1000 µs 752.1000 µs] 242 MB/s
+
+minecraft_savedata/borsh/serialize
+                        time:   [553.91 µs 554.07 µs 554.26 µs]
+Found 8 outliers among 100 measurements (8.00%)
+  1 (1.00%) low severe
+  1 (1.00%) low mild
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+minecraft_savedata/borsh/deserialize
+                        time:   [1.8186 ms 1.8195 ms 1.8205 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+minecraft_savedata/borsh/size 446595
+minecraft_savedata/borsh/zlib 234236
+minecraft_savedata/borsh/zstd 210008
+minecraft_savedata/borsh/zstd_time time:   [2.4760 ms 2.4760 ms 2.4760 ms] 84 MB/s
+
+minecraft_savedata/serde-brief/serialize
+                        time:   [1.3638 ms 1.3642 ms 1.3646 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  1 (1.00%) low mild
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+minecraft_savedata/serde-brief/deserialize
+                        time:   [5.4254 ms 5.4288 ms 5.4324 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  1 (1.00%) high mild
+  3 (3.00%) high severe
+minecraft_savedata/serde-brief/size 1276014
+minecraft_savedata/serde-brief/zlib 373898
+minecraft_savedata/serde-brief/zstd 293679
+minecraft_savedata/serde-brief/zstd_time time:   [4.0528 ms 4.0528 ms 4.0528 ms] 72 MB/s
+
+minecraft_savedata/capnp/serialize
+                        time:   [466.10 µs 467.10 µs 468.17 µs]
+Found 23 outliers among 100 measurements (23.00%)
+  13 (13.00%) low severe
+  7 (7.00%) low mild
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+minecraft_savedata/capnp/access (validated on-demand with error)
+                        time:   [71.930 ns 72.121 ns 72.402 ns]
+Found 8 outliers among 100 measurements (8.00%)
+  2 (2.00%) high mild
+  6 (6.00%) high severe
+minecraft_savedata/capnp/read (validated on-demand with error)
+                        time:   [409.08 ns 409.18 ns 409.31 ns]
+Found 11 outliers among 100 measurements (11.00%)
+  5 (5.00%) low severe
+  2 (2.00%) low mild
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+minecraft_savedata/capnp/size 803896
+minecraft_savedata/capnp/zlib 335606
+minecraft_savedata/capnp/zstd 280851
+minecraft_savedata/capnp/zstd_time time:   [3.9335 ms 3.9335 ms 3.9335 ms] 71 MB/s
+
+minecraft_savedata/cbor4ii/serialize
+                        time:   [779.00 µs 779.25 µs 779.56 µs]
+Found 5 outliers among 100 measurements (5.00%)
+  2 (2.00%) low mild
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+minecraft_savedata/cbor4ii/deserialize
+                        time:   [4.8252 ms 4.8267 ms 4.8282 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) low mild
+minecraft_savedata/cbor4ii/size 1109831
+minecraft_savedata/cbor4ii/zlib 344745
+minecraft_savedata/cbor4ii/zstd 274514
+minecraft_savedata/cbor4ii/zstd_time time:   [3.8249 ms 3.8249 ms 3.8249 ms] 71 MB/s
+
+minecraft_savedata/ciborium/serialize
+                        time:   [3.8626 ms 3.8653 ms 3.8680 ms]
+minecraft_savedata/ciborium/deserialize
+                        time:   [10.294 ms 10.301 ms 10.309 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high severe
+minecraft_savedata/ciborium/size 1109821
+minecraft_savedata/ciborium/zlib 344751
+minecraft_savedata/ciborium/zstd 274526
+minecraft_savedata/ciborium/zstd_time time:   [3.8049 ms 3.8049 ms 3.8049 ms] 72 MB/s
+
+minecraft_savedata/databuf/serialize
+                        time:   [325.42 µs 325.62 µs 325.87 µs]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low mild
+  3 (3.00%) high mild
+  5 (5.00%) high severe
+minecraft_savedata/databuf/deserialize
+                        time:   [1.7423 ms 1.7430 ms 1.7439 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  4 (4.00%) high mild
+  5 (5.00%) high severe
+minecraft_savedata/databuf/size 356311
+minecraft_savedata/databuf/zlib 213062
+minecraft_savedata/databuf/zstd 198488
+minecraft_savedata/databuf/zstd_time time:   [2.4236 ms 2.4236 ms 2.4236 ms] 81 MB/s
+
+minecraft_savedata/dlhn/serialize
+                        time:   [796.57 µs 797.03 µs 797.52 µs]
+Found 7 outliers among 100 measurements (7.00%)
+  1 (1.00%) low mild
+  4 (4.00%) high mild
+  2 (2.00%) high severe
+minecraft_savedata/dlhn/deserialize
+                        time:   [2.6175 ms 2.6207 ms 2.6245 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  2 (2.00%) high mild
+  5 (5.00%) high severe
+minecraft_savedata/dlhn/size 366496
+minecraft_savedata/dlhn/zlib 220600
+minecraft_savedata/dlhn/zstd 205683
+minecraft_savedata/dlhn/zstd_time time:   [2.4701 ms 2.4701 ms 2.4701 ms] 83 MB/s
+
+minecraft_savedata/flatbuffers/serialize
+                        time:   [3.2704 ms 3.2721 ms 3.2743 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+minecraft_savedata/flatbuffers/access (unvalidated)
+                        time:   [2.4729 ns 2.4735 ns 2.4742 ns]
+Found 11 outliers among 100 measurements (11.00%)
+  1 (1.00%) low severe
+  1 (1.00%) low mild
+  3 (3.00%) high mild
+  6 (6.00%) high severe
+minecraft_savedata/flatbuffers/access (validated upfront with error)
+                        time:   [2.1844 ms 2.1850 ms 2.1857 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high severe
+minecraft_savedata/flatbuffers/read (unvalidated)
+                        time:   [1.3517 µs 1.3523 µs 1.3532 µs]
+Found 5 outliers among 100 measurements (5.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+minecraft_savedata/flatbuffers/read (validated upfront with error)
+                        time:   [2.2054 ms 2.2058 ms 2.2063 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  4 (4.00%) high mild
+minecraft_savedata/flatbuffers/size 844168
+minecraft_savedata/flatbuffers/zlib 345696
+minecraft_savedata/flatbuffers/zstd 294015
+minecraft_savedata/flatbuffers/zstd_time time:   [3.8267 ms 3.8267 ms 3.8267 ms] 76 MB/s
+
+minecraft_savedata/msgpacker/serialize
+                        time:   [945.64 µs 962.05 µs 975.33 µs]
+minecraft_savedata/msgpacker/deserialize
+                        time:   [2.8841 ms 2.8855 ms 2.8869 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high mild
+minecraft_savedata/msgpacker/size 391251
+minecraft_savedata/msgpacker/zlib 236877
+minecraft_savedata/msgpacker/zstd 220476
+minecraft_savedata/msgpacker/zstd_time time:   [2.6398 ms 2.6398 ms 2.6398 ms] 83 MB/s
+
+minecraft_savedata/nachricht-serde/serialize
+                        time:   [5.1250 ms 5.1269 ms 5.1291 ms]
+Found 8 outliers among 100 measurements (8.00%)
+  6 (6.00%) high mild
+  2 (2.00%) high severe
+minecraft_savedata/nachricht-serde/deserialize
+                        time:   [3.9832 ms 3.9940 ms 4.0116 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  1 (1.00%) high mild
+  6 (6.00%) high severe
+minecraft_savedata/nachricht-serde/size 449745
+minecraft_savedata/nachricht-serde/zlib 252432
+minecraft_savedata/nachricht-serde/zstd 231110
+minecraft_savedata/nachricht-serde/zstd_time time:   [2.7423 ms 2.7423 ms 2.7423 ms] 84 MB/s
+
+minecraft_savedata/parity-scale-codec/serialize
+                        time:   [598.12 µs 598.40 µs 598.74 µs]
+Found 11 outliers among 100 measurements (11.00%)
+  1 (1.00%) low mild
+  5 (5.00%) high mild
+  5 (5.00%) high severe
+minecraft_savedata/parity-scale-codec/deserialize
+                        time:   [2.0109 ms 2.0132 ms 2.0159 ms]
+Found 11 outliers among 100 measurements (11.00%)
+  2 (2.00%) high mild
+  9 (9.00%) high severe
+minecraft_savedata/parity-scale-codec/size 356311
+minecraft_savedata/parity-scale-codec/zlib 212976
+minecraft_savedata/parity-scale-codec/zstd 198524
+minecraft_savedata/parity-scale-codec/zstd_time time:   [2.3715 ms 2.3715 ms 2.3715 ms] 83 MB/s
+
+minecraft_savedata/postcard/serialize
+                        time:   [449.22 µs 449.50 µs 449.85 µs]
+Found 7 outliers among 100 measurements (7.00%)
+  4 (4.00%) high mild
+  3 (3.00%) high severe
+minecraft_savedata/postcard/deserialize
+                        time:   [2.0636 ms 2.0648 ms 2.0660 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  4 (4.00%) low mild
+  2 (2.00%) high severe
+minecraft_savedata/postcard/size 367489
+minecraft_savedata/postcard/zlib 221913
+minecraft_savedata/postcard/zstd 207344
+minecraft_savedata/postcard/zstd_time time:   [2.5251 ms 2.5251 ms 2.5251 ms] 82 MB/s
+
+minecraft_savedata/pot/serialize
+                        time:   [2.3747 ms 2.3765 ms 2.3789 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  2 (2.00%) high mild
+  4 (4.00%) high severe
+minecraft_savedata/pot/deserialize
+                        time:   [6.0129 ms 6.0222 ms 6.0321 ms]
+Found 15 outliers among 100 measurements (15.00%)
+  14 (14.00%) high mild
+  1 (1.00%) high severe
+minecraft_savedata/pot/size 599125
+minecraft_savedata/pot/zlib 299158
+minecraft_savedata/pot/zstd 247693
+minecraft_savedata/pot/zstd_time time:   [3.1479 ms 3.1479 ms 3.1479 ms] 78 MB/s
+
+minecraft_savedata/prost/serialize (populate + encode)
+                        time:   [2.7727 ms 2.7746 ms 2.7768 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high severe
+minecraft_savedata/prost/serialize (encode)
+                        time:   [1.0754 ms 1.0763 ms 1.0772 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+minecraft_savedata/prost/deserialize
+                        time:   [3.4606 ms 3.4633 ms 3.4670 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+minecraft_savedata/prost/size 596811
+minecraft_savedata/prost/zlib 305319
+minecraft_savedata/prost/zstd 269310
+minecraft_savedata/prost/zstd_time time:   [3.4531 ms 3.4531 ms 3.4531 ms] 77 MB/s
+
+minecraft_savedata/rkyv/serialize
+                        time:   [346.19 µs 346.42 µs 346.61 µs]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high severe
+minecraft_savedata/rkyv/access (unvalidated)
+                        time:   [1.2365 ns 1.2370 ns 1.2376 ns]
+Found 14 outliers among 100 measurements (14.00%)
+  1 (1.00%) low severe
+  6 (6.00%) high mild
+  7 (7.00%) high severe
+minecraft_savedata/rkyv/access (validated upfront with error)
+                        time:   [535.79 µs 536.70 µs 537.47 µs]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+minecraft_savedata/rkyv/read (unvalidated)
+                        time:   [162.92 ns 163.02 ns 163.20 ns]
+Found 4 outliers among 100 measurements (4.00%)
+  2 (2.00%) low mild
+  2 (2.00%) high severe
+minecraft_savedata/rkyv/read (validated upfront with error)
+                        time:   [538.14 µs 538.79 µs 539.42 µs]
+minecraft_savedata/rkyv/update (unvalidated)
+                        time:   [723.84 ns 724.87 ns 725.99 ns]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+minecraft_savedata/rkyv/deserialize (unvalidated)
+                        time:   [1.5227 ms 1.5243 ms 1.5264 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  5 (5.00%) high mild
+  2 (2.00%) high severe
+minecraft_savedata/rkyv/deserialize (validated upfront with error)
+                        time:   [2.0531 ms 2.0549 ms 2.0569 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+minecraft_savedata/rkyv/size 603776
+minecraft_savedata/rkyv/zlib 254776
+minecraft_savedata/rkyv/zstd 220087
+minecraft_savedata/rkyv/zstd_time time:   [2.7348 ms 2.7348 ms 2.7348 ms] 80 MB/s
+
+minecraft_savedata/rmp-serde/serialize
+                        time:   [1.3547 ms 1.3582 ms 1.3635 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high severe
+minecraft_savedata/rmp-serde/deserialize
+                        time:   [3.0428 ms 3.0443 ms 3.0462 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  1 (1.00%) high mild
+  1 (1.00%) high severe
+minecraft_savedata/rmp-serde/size 424533
+minecraft_savedata/rmp-serde/zlib 245214
+minecraft_savedata/rmp-serde/zstd 226188
+minecraft_savedata/rmp-serde/zstd_time time:   [2.6764 ms 2.6764 ms 2.6764 ms] 84 MB/s
+
+minecraft_savedata/ron/serialize
+                        time:   [7.1896 ms 7.1939 ms 7.1990 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  5 (5.00%) high severe
+minecraft_savedata/ron/deserialize
+                        time:   [16.968 ms 16.990 ms 17.020 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  1 (1.00%) low severe
+  1 (1.00%) high severe
+minecraft_savedata/ron/size 1465223
+minecraft_savedata/ron/zlib 434935
+minecraft_savedata/ron/zstd 343338
+minecraft_savedata/ron/zstd_time time:   [5.8532 ms 5.8532 ms 5.8532 ms] 58 MB/s
+
+minecraft_savedata/savefile/serialize
+                        time:   [211.74 µs 213.27 µs 216.30 µs]
+Found 6 outliers among 100 measurements (6.00%)
+  4 (4.00%) high mild
+  2 (2.00%) high severe
+minecraft_savedata/savefile/deserialize
+                        time:   [1.8587 ms 1.8600 ms 1.8617 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+  6 (6.00%) high severe
+minecraft_savedata/savefile/size 566991
+minecraft_savedata/savefile/zlib 239361
+minecraft_savedata/savefile/zstd 232013
+minecraft_savedata/savefile/zstd_time time:   [2.8630 ms 2.8630 ms 2.8630 ms] 81 MB/s
+
+minecraft_savedata/serde_bare/serialize
+                        time:   [737.06 µs 737.51 µs 738.06 µs]
+Found 5 outliers among 100 measurements (5.00%)
+  1 (1.00%) high mild
+  4 (4.00%) high severe
+minecraft_savedata/serde_bare/deserialize
+                        time:   [2.3395 ms 2.3413 ms 2.3434 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+minecraft_savedata/serde_bare/size 356311
+minecraft_savedata/serde_bare/zlib 213062
+minecraft_savedata/serde_bare/zstd 198488
+minecraft_savedata/serde_bare/zstd_time time:   [2.3749 ms 2.3749 ms 2.3749 ms] 83 MB/s
+
+minecraft_savedata/serde_cbor/serialize
+                        time:   [1.8544 ms 1.8574 ms 1.8604 ms]
+Found 18 outliers among 100 measurements (18.00%)
+  14 (14.00%) low severe
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+minecraft_savedata/serde_cbor/deserialize
+                        time:   [4.7688 ms 4.7716 ms 4.7748 ms]
+Found 10 outliers among 100 measurements (10.00%)
+  8 (8.00%) high mild
+  2 (2.00%) high severe
+minecraft_savedata/serde_cbor/size 1109821
+minecraft_savedata/serde_cbor/zlib 344751
+minecraft_savedata/serde_cbor/zstd 274526
+minecraft_savedata/serde_cbor/zstd_time time:   [3.8248 ms 3.8248 ms 3.8248 ms] 71 MB/s
+
+minecraft_savedata/serde_json/serialize
+                        time:   [3.6284 ms 3.6305 ms 3.6333 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  3 (3.00%) low mild
+  4 (4.00%) high severe
+minecraft_savedata/serde_json/deserialize
+                        time:   [6.3078 ms 6.3128 ms 6.3195 ms]
+Found 8 outliers among 100 measurements (8.00%)
+  3 (3.00%) high mild
+  5 (5.00%) high severe
+minecraft_savedata/serde_json/size 1623191
+minecraft_savedata/serde_json/zlib 466527
+minecraft_savedata/serde_json/zstd 359623
+minecraft_savedata/serde_json/zstd_time time:   [6.0346 ms 6.0346 ms 6.0346 ms] 59 MB/s
+
+minecraft_savedata/simd-json/serialize
+                        time:   [2.2196 ms 2.2203 ms 2.2212 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  2 (2.00%) high mild
+  4 (4.00%) high severe
+minecraft_savedata/simd-json/deserialize
+                        time:   [4.5744 ms 4.5767 ms 4.5794 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  1 (1.00%) low severe
+  1 (1.00%) low mild
+  1 (1.00%) high mild
+  4 (4.00%) high severe
+minecraft_savedata/simd-json/size 1623191
+minecraft_savedata/simd-json/zlib 466527
+minecraft_savedata/simd-json/zstd 359623
+minecraft_savedata/simd-json/zstd_time time:   [6.0299 ms 6.0299 ms 6.0299 ms] 59 MB/s
+
+minecraft_savedata/speedy/serialize
+                        time:   [268.67 µs 268.88 µs 269.10 µs]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high mild
+minecraft_savedata/speedy/deserialize
+                        time:   [1.6006 ms 1.6016 ms 1.6029 ms]
+Found 13 outliers among 100 measurements (13.00%)
+  8 (8.00%) high mild
+  5 (5.00%) high severe
+minecraft_savedata/speedy/size 449595
+minecraft_savedata/speedy/zlib 234970
+minecraft_savedata/speedy/zstd 210361
+minecraft_savedata/speedy/zstd_time time:   [2.4847 ms 2.4847 ms 2.4847 ms] 84 MB/s
+
+serialization bench type = rust_serialization_benchmark::datasets::minecraft_savedata::Players
+minecraft_savedata/serialization/serialize #2
+                        time:   [1.2026 ms 1.2046 ms 1.2067 ms]
+breakpoint2
+breakpoint2
+breakpoint3
+breakpoint4
+bp5
+breakpoint1
+breakpoint2
+breakpoint3
+breakpoint4
+breakpoint5
+bp5.2
+minecraft_savedata/serialization/deserialize #2
+                        time:   [5.7457 ms 5.7479 ms 5.7504 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+minecraft_savedata/serialization/size 356311
+minecraft_savedata/serialization/zlib 211955
+minecraft_savedata/serialization/zstd 195923
+minecraft_savedata/serialization/zstd_time time:   [2.3470 ms 2.3470 ms 2.3470 ms] 83 MB/s
+
+minecraft_savedata/nanoserde/serialize
+                        time:   [272.38 µs 272.52 µs 272.68 µs]
+Found 7 outliers among 100 measurements (7.00%)
+  1 (1.00%) low mild
+  5 (5.00%) high mild
+  1 (1.00%) high severe
+minecraft_savedata/nanoserde/deserialize
+                        time:   [1.9521 ms 1.9540 ms 1.9559 ms]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+minecraft_savedata/nanoserde/size 567975
+minecraft_savedata/nanoserde/zlib 239930
+minecraft_savedata/nanoserde/zstd 232419
+minecraft_savedata/nanoserde/zstd_time time:   [2.9101 ms 2.9101 ms 2.9101 ms] 79 MB/s
+
+minecraft_savedata/wiring/serialize
+                        time:   [208.72 µs 209.67 µs 211.26 µs]
+Found 9 outliers among 100 measurements (9.00%)
+  3 (3.00%) low mild
+  1 (1.00%) high mild
+  5 (5.00%) high severe
+minecraft_savedata/wiring/deserialize
+                        time:   [1.8327 ms 1.8337 ms 1.8347 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  1 (1.00%) low mild
+  4 (4.00%) high mild
+  1 (1.00%) high severe
+minecraft_savedata/wiring/size 566975
+minecraft_savedata/wiring/zlib 247810
+minecraft_savedata/wiring/zstd 225259
+minecraft_savedata/wiring/zstd_time time:   [2.9143 ms 2.9143 ms 2.9143 ms] 77 MB/s
+
+serialization bench type = rust_serialization_benchmark::datasets::mk48::Updates
+mk48/serialization/serialize
+                        time:   [4.3199 ms 4.3230 ms 4.3266 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+breakpoint2
+breakpoint2
+breakpoint3
+breakpoint4
+bp5
+breakpoint1
+breakpoint2
+breakpoint3
+breakpoint4
+breakpoint5
+bp5.2
+mk48/serialization/deserialize
+                        time:   [9.5176 ms 9.5214 ms 9.5268 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+mk48/serialization/size 1288257
+mk48/serialization/zlib 1037644
+mk48/serialization/zstd 980863
+mk48/serialization/zstd_time time:   [8.4879 ms 8.4879 ms 8.4879 ms] 115 MB/s
+
+mk48/bilrost/serialize (encode)
+                        time:   [4.4564 ms 4.4591 ms 4.4626 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high severe
+mk48/bilrost/serialize (prepend)
+                        time:   [2.4961 ms 2.5001 ms 2.5063 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  1 (1.00%) high mild
+  6 (6.00%) high severe
+mk48/bilrost/deserialize
+                        time:   [8.1203 ms 8.1315 ms 8.1433 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  4 (4.00%) low mild
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+mk48/bilrost/size 1664428
+mk48/bilrost/zlib 1264167
+mk48/bilrost/zstd 1216472
+mk48/bilrost/zstd_time time:   [11.0498 ms 11.0498 ms 11.0498 ms] 110 MB/s
+
+mk48/bincode1/serialize time:   [4.0339 ms 4.0353 ms 4.0372 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+mk48/bincode1/deserialize
+                        time:   [4.2340 ms 4.2349 ms 4.2359 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high mild
+mk48/bincode1/size 1811011
+mk48/bincode1/zlib 1115281
+mk48/bincode1/zstd 1025627
+mk48/bincode1/zstd_time time:   [9.7037 ms 9.7037 ms 9.7037 ms] 105 MB/s
+
+mk48/bincode/serialize  time:   [1.3728 ms 1.3732 ms 1.3736 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high mild
+mk48/bincode/deserialize
+                        time:   [3.9837 ms 3.9853 ms 3.9870 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  5 (5.00%) high mild
+  1 (1.00%) high severe
+mk48/bincode/size 1372381
+mk48/bincode/zlib 1091486
+mk48/bincode/zstd 1037296
+mk48/bincode/zstd_time time:   [8.9552 ms 8.9552 ms 8.9552 ms] 115 MB/s
+
+mk48/bitcode/serialize  time:   [702.63 µs 702.92 µs 703.24 µs]
+Found 7 outliers among 100 measurements (7.00%)
+  2 (2.00%) low mild
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+mk48/bitcode/deserialize
+                        time:   [2.3100 ms 2.3110 ms 2.3121 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+mk48/bitcode/size 948499
+mk48/bitcode/zlib 857321
+mk48/bitcode/zstd 837658
+mk48/bitcode/zstd_time time:   [3.0524 ms 3.0524 ms 3.0524 ms] 274 MB/s
+
+mk48/borsh/serialize    time:   [2.8109 ms 2.8275 ms 2.8433 ms]
+Found 28 outliers among 100 measurements (28.00%)
+  23 (23.00%) low severe
+  1 (1.00%) high mild
+  4 (4.00%) high severe
+mk48/borsh/deserialize  time:   [2.8144 ms 2.8156 ms 2.8171 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  4 (4.00%) high mild
+  2 (2.00%) high severe
+mk48/borsh/size 1486162
+mk48/borsh/zlib 1082357
+mk48/borsh/zstd 1013550
+mk48/borsh/zstd_time time:   [9.5563 ms 9.5563 ms 9.5563 ms] 106 MB/s
+
+mk48/serde-brief/serialize
+                        time:   [6.3945 ms 6.4037 ms 6.4185 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  3 (3.00%) high mild
+  6 (6.00%) high severe
+mk48/serde-brief/deserialize
+                        time:   [22.125 ms 22.145 ms 22.167 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  1 (1.00%) low mild
+  5 (5.00%) high mild
+  1 (1.00%) high severe
+mk48/serde-brief/size 6796949
+mk48/serde-brief/zlib 1754624
+mk48/serde-brief/zstd 1533223
+mk48/serde-brief/zstd_time time:   [22.9046 ms 22.9046 ms 22.9046 ms] 66 MB/s
+
+mk48/capnp/serialize    time:   [2.1426 ms 2.1445 ms 2.1465 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  4 (4.00%) high mild
+  1 (1.00%) high severe
+mk48/capnp/access (validated on-demand with error)
+                        time:   [72.034 ns 72.100 ns 72.170 ns]
+Found 5 outliers among 100 measurements (5.00%)
+  4 (4.00%) high mild
+  1 (1.00%) high severe
+mk48/capnp/read (validated on-demand with error)
+                        time:   [707.59 ns 709.44 ns 712.86 ns]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low severe
+  2 (2.00%) low mild
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+mk48/capnp/size 2664040
+mk48/capnp/zlib 1511895
+mk48/capnp/zstd 1212087
+mk48/capnp/zstd_time time:   [13.8435 ms 13.8435 ms 13.8435 ms] 87 MB/s
+
+mk48/cbor4ii/serialize  time:   [3.2450 ms 3.2461 ms 3.2476 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+mk48/cbor4ii/deserialize
+                        time:   [18.337 ms 18.358 ms 18.382 ms]
+Found 19 outliers among 100 measurements (19.00%)
+  10 (10.00%) low severe
+  4 (4.00%) low mild
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+mk48/cbor4ii/size 5878791
+mk48/cbor4ii/zlib 1655835
+mk48/cbor4ii/zstd 1431390
+mk48/cbor4ii/zstd_time time:   [20.8836 ms 20.8836 ms 20.8836 ms] 68 MB/s
+
+mk48/ciborium/serialize time:   [22.602 ms 22.690 ms 22.780 ms]
+mk48/ciborium/deserialize
+                        time:   [54.967 ms 54.990 ms 55.014 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  5 (5.00%) high mild
+mk48/ciborium/size 5878653
+mk48/ciborium/zlib 1655791
+mk48/ciborium/zstd 1431560
+mk48/ciborium/zstd_time time:   [20.7048 ms 20.7048 ms 20.7048 ms] 69 MB/s
+
+mk48/databuf/serialize  time:   [1.2828 ms 1.2833 ms 1.2838 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  4 (4.00%) high mild
+mk48/databuf/deserialize
+                        time:   [3.6982 ms 3.7001 ms 3.7023 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  2 (2.00%) high mild
+  4 (4.00%) high severe
+mk48/databuf/size 1288257
+mk48/databuf/zlib 1037579
+mk48/databuf/zstd 984337
+mk48/databuf/zstd_time time:   [8.4602 ms 8.4602 ms 8.4602 ms] 116 MB/s
+
+mk48/dlhn/serialize     time:   [4.9560 ms 4.9590 ms 4.9631 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  2 (2.00%) high mild
+  5 (5.00%) high severe
+mk48/dlhn/deserialize   time:   [6.5608 ms 6.5658 ms 6.5722 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low severe
+  4 (4.00%) low mild
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+mk48/dlhn/size 1279599
+mk48/dlhn/zlib 1052061
+mk48/dlhn/zstd 1021161
+mk48/dlhn/zstd_time time:   [8.2619 ms 8.2619 ms 8.2619 ms] 123 MB/s
+
+mk48/flatbuffers/serialize
+                        time:   [4.7640 ms 4.7659 ms 4.7682 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) high mild
+  8 (8.00%) high severe
+mk48/flatbuffers/access (unvalidated)
+                        time:   [2.4732 ns 2.4754 ns 2.4798 ns]
+Found 11 outliers among 100 measurements (11.00%)
+  1 (1.00%) low severe
+  3 (3.00%) high mild
+  7 (7.00%) high severe
+mk48/flatbuffers/access (validated upfront with error)
+                        time:   [5.0988 ms 5.1005 ms 5.1022 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high mild
+mk48/flatbuffers/read (unvalidated)
+                        time:   [2.6282 µs 2.6291 µs 2.6304 µs]
+Found 11 outliers among 100 measurements (11.00%)
+  1 (1.00%) low mild
+  5 (5.00%) high mild
+  5 (5.00%) high severe
+mk48/flatbuffers/read (validated upfront with error)
+                        time:   [5.0878 ms 5.0894 ms 5.0912 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+mk48/flatbuffers/size 2273740
+mk48/flatbuffers/zlib 1408408
+mk48/flatbuffers/zstd 1235566
+mk48/flatbuffers/zstd_time time:   [12.7644 ms 12.7644 ms 12.7644 ms] 96 MB/s
+
+mk48/msgpacker/serialize
+                        time:   [2.2589 ms 2.2604 ms 2.2624 ms]
+Found 8 outliers among 100 measurements (8.00%)
+  2 (2.00%) low mild
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+mk48/msgpacker/deserialize
+                        time:   [6.7720 ms 6.7802 ms 6.7891 ms]
+Found 17 outliers among 100 measurements (17.00%)
+  12 (12.00%) low mild
+  4 (4.00%) high mild
+  1 (1.00%) high severe
+mk48/msgpacker/size 1424043
+mk48/msgpacker/zlib 1128758
+mk48/msgpacker/zstd 1110156
+mk48/msgpacker/zstd_time time:   [9.3678 ms 9.3678 ms 9.3678 ms] 118 MB/s
+
+mk48/nachricht-serde/serialize
+                        time:   [28.938 ms 28.955 ms 28.976 ms]
+Found 10 outliers among 100 measurements (10.00%)
+  5 (5.00%) high mild
+  5 (5.00%) high severe
+mk48/nachricht-serde/deserialize
+                        time:   [17.357 ms 17.371 ms 17.387 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  1 (1.00%) low mild
+  6 (6.00%) high severe
+mk48/nachricht-serde/size 1728519
+mk48/nachricht-serde/zlib 1247642
+mk48/nachricht-serde/zstd 1233323
+mk48/nachricht-serde/zstd_time time:   [12.2781 ms 12.2781 ms 12.2781 ms] 100 MB/s
+
+mk48/parity-scale-codec/serialize
+                        time:   [3.0429 ms 3.0443 ms 3.0460 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  2 (2.00%) high mild
+  4 (4.00%) high severe
+mk48/parity-scale-codec/deserialize
+                        time:   [3.2426 ms 3.2435 ms 3.2444 ms]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high mild
+mk48/parity-scale-codec/size 1288257
+mk48/parity-scale-codec/zlib 1039269
+mk48/parity-scale-codec/zstd 986510
+mk48/parity-scale-codec/zstd_time time:   [8.7761 ms 8.7761 ms 8.7761 ms] 112 MB/s
+
+mk48/postcard/serialize time:   [1.9313 ms 1.9325 ms 1.9339 ms]
+Found 10 outliers among 100 measurements (10.00%)
+  3 (3.00%) high mild
+  7 (7.00%) high severe
+mk48/postcard/deserialize
+                        time:   [4.1739 ms 4.1967 ms 4.2310 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  9 (9.00%) high severe
+mk48/postcard/size 1279599
+mk48/postcard/zlib 1058243
+mk48/postcard/zstd 1016738
+mk48/postcard/zstd_time time:   [8.3558 ms 8.3558 ms 8.3558 ms] 121 MB/s
+
+mk48/pot/serialize      time:   [13.759 ms 13.764 ms 13.769 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+mk48/pot/deserialize    time:   [29.432 ms 29.484 ms 29.541 ms]
+Found 18 outliers among 100 measurements (18.00%)
+  8 (8.00%) high mild
+  10 (10.00%) high severe
+mk48/pot/size 2544810
+mk48/pot/zlib 1447453
+mk48/pot/zstd 1268390
+mk48/pot/zstd_time time:   [15.2898 ms 15.2898 ms 15.2898 ms] 82 MB/s
+
+mk48/prost/serialize (populate + encode)
+                        time:   [8.6699 ms 8.6741 ms 8.6787 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+mk48/prost/serialize (encode)
+                        time:   [4.7869 ms 4.7882 ms 4.7898 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+mk48/prost/deserialize  time:   [8.5677 ms 8.5871 ms 8.6058 ms]
+Found 13 outliers among 100 measurements (13.00%)
+  5 (5.00%) low severe
+  7 (7.00%) low mild
+  1 (1.00%) high mild
+mk48/prost/size 1818378
+mk48/prost/zlib 1307777
+mk48/prost/zstd 1266311
+mk48/prost/zstd_time time:   [11.3932 ms 11.3932 ms 11.3932 ms] 111 MB/s
+
+mk48/rkyv/serialize     time:   [908.32 µs 908.76 µs 909.29 µs]
+Found 7 outliers among 100 measurements (7.00%)
+  3 (3.00%) high mild
+  4 (4.00%) high severe
+mk48/rkyv/access (unvalidated)
+                        time:   [1.2366 ns 1.2370 ns 1.2375 ns]
+Found 10 outliers among 100 measurements (10.00%)
+  2 (2.00%) low severe
+  1 (1.00%) low mild
+  1 (1.00%) high mild
+  6 (6.00%) high severe
+mk48/rkyv/access (validated upfront with error)
+                        time:   [424.24 µs 424.49 µs 424.79 µs]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+mk48/rkyv/read (unvalidated)
+                        time:   [435.63 ns 436.08 ns 436.65 ns]
+Found 12 outliers among 100 measurements (12.00%)
+  3 (3.00%) low severe
+  2 (2.00%) low mild
+  2 (2.00%) high mild
+  5 (5.00%) high severe
+mk48/rkyv/read (validated upfront with error)
+                        time:   [424.66 µs 425.08 µs 425.69 µs]
+Found 5 outliers among 100 measurements (5.00%)
+  1 (1.00%) low mild
+  4 (4.00%) high severe
+mk48/rkyv/update (unvalidated)
+                        time:   [235.19 ns 235.57 ns 235.94 ns]
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+mk48/rkyv/deserialize (unvalidated)
+                        time:   [2.1391 ms 2.1413 ms 2.1440 ms]
+Found 8 outliers among 100 measurements (8.00%)
+  2 (2.00%) high mild
+  6 (6.00%) high severe
+mk48/rkyv/deserialize (validated upfront with error)
+                        time:   [2.5757 ms 2.5768 ms 2.5781 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+mk48/rkyv/size 2029080
+mk48/rkyv/zlib 1351984
+mk48/rkyv/zstd 1183990
+mk48/rkyv/zstd_time time:   [12.5290 ms 12.5290 ms 12.5290 ms] 94 MB/s
+
+mk48/rmp-serde/serialize
+                        time:   [9.8436 ms 9.8505 ms 9.8591 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  4 (4.00%) high mild
+  5 (5.00%) high severe
+mk48/rmp-serde/deserialize
+                        time:   [10.725 ms 10.732 ms 10.739 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  4 (4.00%) high severe
+mk48/rmp-serde/size 1703813
+mk48/rmp-serde/zlib 1231892
+mk48/rmp-serde/zstd 1200208
+mk48/rmp-serde/zstd_time time:   [10.8375 ms 10.8375 ms 10.8375 ms] 110 MB/s
+
+mk48/ron/serialize      time:   [36.654 ms 36.835 ms 37.134 ms]
+Found 14 outliers among 100 measurements (14.00%)
+  3 (3.00%) high mild
+  11 (11.00%) high severe
+mk48/ron/deserialize    time:   [86.076 ms 86.148 ms 86.232 ms]
+Found 11 outliers among 100 measurements (11.00%)
+  1 (1.00%) low severe
+  4 (4.00%) high mild
+  6 (6.00%) high severe
+mk48/ron/size 8476284
+mk48/ron/zlib 2181196
+mk48/ron/zstd 1783971
+mk48/ron/zstd_time time:   [34.3072 ms 34.3072 ms 34.3072 ms] 51 MB/s
+
+mk48/savefile/serialize time:   [819.61 µs 819.88 µs 820.15 µs]
+Found 2 outliers among 100 measurements (2.00%)
+  1 (1.00%) high mild
+  1 (1.00%) high severe
+mk48/savefile/deserialize
+                        time:   [2.7311 ms 2.7327 ms 2.7345 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+mk48/savefile/size 1750226
+mk48/savefile/zlib 1101682
+mk48/savefile/zstd 1027828
+mk48/savefile/zstd_time time:   [9.7883 ms 9.7883 ms 9.7883 ms] 105 MB/s
+
+mk48/serde_bare/serialize
+                        time:   [4.8506 ms 4.8523 ms 4.8545 ms]
+Found 7 outliers among 100 measurements (7.00%)
+  5 (5.00%) high mild
+  2 (2.00%) high severe
+mk48/serde_bare/deserialize
+                        time:   [4.6941 ms 4.6962 ms 4.6988 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+mk48/serde_bare/size 1288257
+mk48/serde_bare/zlib 1037597
+mk48/serde_bare/zstd 984356
+mk48/serde_bare/zstd_time time:   [8.4495 ms 8.4495 ms 8.4495 ms] 116 MB/s
+
+mk48/serde_cbor/serialize
+                        time:   [9.6182 ms 9.6225 ms 9.6278 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+mk48/serde_cbor/deserialize
+                        time:   [21.275 ms 21.295 ms 21.315 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+mk48/serde_cbor/size 5878653
+mk48/serde_cbor/zlib 1655791
+mk48/serde_cbor/zstd 1431560
+mk48/serde_cbor/zstd_time time:   [20.9550 ms 20.9550 ms 20.9550 ms] 68 MB/s
+
+mk48/serde_json/serialize
+                        time:   [19.963 ms 19.969 ms 19.976 ms]
+Found 8 outliers among 100 measurements (8.00%)
+  3 (3.00%) high mild
+  5 (5.00%) high severe
+mk48/serde_json/deserialize
+                        time:   [29.044 ms 29.069 ms 29.101 ms]
+Found 10 outliers among 100 measurements (10.00%)
+  6 (6.00%) high mild
+  4 (4.00%) high severe
+mk48/serde_json/size 9175594
+mk48/serde_json/zlib 2334253
+mk48/serde_json/zstd 1800713
+mk48/serde_json/zstd_time time:   [33.8732 ms 33.8732 ms 33.8732 ms] 53 MB/s
+
+mk48/simd-json/serialize
+                        time:   [11.411 ms 11.421 ms 11.435 ms]
+Found 8 outliers among 100 measurements (8.00%)
+  3 (3.00%) high mild
+  5 (5.00%) high severe
+mk48/simd-json/deserialize
+                        time:   [26.299 ms 26.335 ms 26.374 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+mk48/simd-json/size 9175594
+mk48/simd-json/zlib 2334253
+mk48/simd-json/zstd 1800713
+mk48/simd-json/zstd_time time:   [33.8282 ms 33.8282 ms 33.8282 ms] 53 MB/s
+
+mk48/speedy/serialize   time:   [748.33 µs 748.79 µs 749.31 µs]
+Found 2 outliers among 100 measurements (2.00%)
+  2 (2.00%) high mild
+mk48/speedy/deserialize time:   [2.4278 ms 2.4294 ms 2.4315 ms]
+Found 4 outliers among 100 measurements (4.00%)
+  1 (1.00%) low mild
+  3 (3.00%) high severe
+mk48/speedy/size 1546963
+mk48/speedy/zlib 1093532
+mk48/speedy/zstd 1013443
+mk48/speedy/zstd_time time:   [9.6704 ms 9.6704 ms 9.6704 ms] 104 MB/s
+
+serialization bench type = rust_serialization_benchmark::datasets::mk48::Updates
+mk48/serialization/serialize #2
+                        time:   [4.3104 ms 4.3158 ms 4.3231 ms]
+Found 8 outliers among 100 measurements (8.00%)
+  1 (1.00%) high mild
+  7 (7.00%) high severe
+breakpoint2
+breakpoint2
+breakpoint3
+breakpoint4
+bp5
+breakpoint1
+breakpoint2
+breakpoint3
+breakpoint4
+breakpoint5
+bp5.2
+mk48/serialization/deserialize #2
+                        time:   [9.5129 ms 9.5174 ms 9.5230 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  2 (2.00%) high mild
+  4 (4.00%) high severe
+mk48/serialization/size 1288257
+mk48/serialization/zlib 1037644
+mk48/serialization/zstd 980863
+mk48/serialization/zstd_time time:   [8.3790 ms 8.3790 ms 8.3790 ms] 117 MB/s
+
+mk48/nanoserde/serialize
+                        time:   [1.4704 ms 1.4711 ms 1.4719 ms]
+Found 12 outliers among 100 measurements (12.00%)
+  4 (4.00%) high mild
+  8 (8.00%) high severe
+mk48/nanoserde/deserialize
+                        time:   [2.8962 ms 2.8975 ms 2.8990 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+mk48/nanoserde/size 1770477
+mk48/nanoserde/zlib 1108304
+mk48/nanoserde/zstd 1029947
+mk48/nanoserde/zstd_time time:   [9.8290 ms 9.8290 ms 9.8290 ms] 104 MB/s
+
+mk48/wiring/serialize   time:   [635.11 µs 635.41 µs 635.74 µs]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+mk48/wiring/deserialize time:   [2.7190 ms 2.7206 ms 2.7224 ms]
+Found 6 outliers among 100 measurements (6.00%)
+  4 (4.00%) high mild
+  2 (2.00%) high severe
+mk48/wiring/size 1750210
+mk48/wiring/zlib 1129857
+mk48/wiring/zstd 1058906
+mk48/wiring/zstd_time time:   [10.1651 ms 10.1651 ms 10.1651 ms] 104 MB/s
+
