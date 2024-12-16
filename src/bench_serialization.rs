@@ -35,14 +35,3 @@ where
     group.finish();
 }
 
-#[derive(Serializable)]
-pub struct AAA {
-    value2: AB,
-    value: i32,
-    vec: Vec<u8>,
-}
-
-#[derive(Serializable)]
-pub struct AB {
-    value: i32,
-}
