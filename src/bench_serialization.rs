@@ -25,7 +25,7 @@ where
     group.bench_function("deserialize", |b| {
         b.iter(|| {
             let ref mut decoder = PacketDecoder::new(&mut buf);
-            let _result = black_box(&T::decode(decoder).unwrap());
+            let _result = black_box(&T::decode_placed(decoder).unwrap());
             unsafe { buf.set_pos(0) };
         })
     });
