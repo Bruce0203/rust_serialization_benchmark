@@ -91,38 +91,42 @@ savefile = { version = "=0.17.7", optional = true }
 savefile-derive = { version = "=0.17.7", optional = true }
 wiring = { version = "=0.2.2", optional = true }
 zstd = "=0.13.2"
+<<<<<<< HEAD
 serialization = { version = "0.2.8", optional = true, features = [] }
 serialization_minecraft = { version = "0.2.8", optional = true, features = [] }
+=======
+serialization = { git = "https://github.com/Bruce0203/serialization", optional = true, features = ["fast_binary_format"] }
+serialization_minecraft = { git = "https://github.com/Bruce0203/serialization", optional = true, features = ["fast_binary_format"] }
+>>>>>>> 77647f9796bb73e827614452d38b9c861d0b1959
 fastbuf = "0.28.0"
 
 [features]
 default = [
     "bilrost",
-    "bincode1",
-    "bincode",
-    "bitcode",
-    "borsh",
+   "bincode1",
+   "bincode",
+   "bitcode",
+   "borsh",
     "capnp",
     "cbor4ii",
     "ciborium",
     "databuf",
-    "dlhn",
-    "flatbuffers",
+   "dlhn",
+   "flatbuffers",
     "msgpacker",
     "nachricht-serde",
-    "nanoserde",
-    "scale",
-    "postcard",
-    "pot",
-    "prost",
+   "nanoserde",
+   "scale",
+   "postcard",
+   "pot",
+   "prost",
     "rkyv",
     "rmp-serde",
     "ron",
     "serde_bare",
-    "serde-brief",
-    "serde_cbor",
-    "serde_json",
-    "simd-json",
+   "serde-brief",
+   "serde_cbor",
+   "serde_json",
     "speedy",
     "savefile",
     "wiring",
