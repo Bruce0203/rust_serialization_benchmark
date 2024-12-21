@@ -11,7 +11,7 @@ where
 {
     let mut group = c.benchmark_group(format!("{}/serialization", name));
 
-    const BUFFER_LEN: usize = 50_000_000;
+    const BUFFER_LEN: usize = 200_000;
     let mut buf = unsafe { Box::<Buffer<BUFFER_LEN>>::new_zeroed().assume_init() };
 
     group.bench_function("serialize", |b| {
