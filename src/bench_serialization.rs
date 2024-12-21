@@ -12,13 +12,13 @@ where
     let mut group = c.benchmark_group(format!("{}/serialization", name));
 
     const BUFFER_LEN: usize = 50_000_000;
-
     let mut buf = unsafe { Box::<Buffer<BUFFER_LEN>>::new_zeroed().assume_init() };
+
     group.bench_function("serialize", |b| {
         b.iter(|| {
             unsafe { buf.set_filled_pos(0) };
             let ref mut encoder = PacketEncoder::new(&mut buf);
-            let _result = black_box(&data.encode(encoder).unwrap());
+            let _result = black_box(&black_box(data).encode(encoder).unwrap());
         })
     });
 
